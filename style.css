@@ -1,0 +1,24 @@
+.toggle_button{
+    width: 90px;
+    height: 40px;
+    margin: 30px 30px;
+    border: solid 2px black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.inner_circle{
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 0 8px;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle_button.active > .inner_circle{
+    background-color: red;
+    margin-left: calc(90px - 38px);
+}
